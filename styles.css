@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax1 {
+    background-image: url(paisagem-do-rio-de-janeiro-cercada-pelo-mar-sob-um-ceu-azul-no-brasil.jpg); 
+}
+
+.parallax2 {
+    background-image: url(pexels-caos-na-terra-129199393-10086263.jpg);
+}
+
+.content {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.description {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.description p {
+    margin: 20px 0;
+} 
+.more-destinations {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.more-destinations h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.destination-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.destination {
+    width: 30%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: background-image 0.3s ease-in-out;
+}
+
+.destination h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
+}
+
+.destination:hover {
+    background-image: url(aerial-shot-trail-morro-das-andorinhas-niteroi-brazil.jpg); /* Muda a imagem ao passar o mouse */
+}
+
+.destination:nth-child(2):hover {
+    background-image: url(pexels-adriano-brodbeck-3134523-4736967.jpg);
+}
+
+.destination:nth-child(3):hover {
+    background-image: url(boat-water-near-shore.jpg);
+}
+
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
